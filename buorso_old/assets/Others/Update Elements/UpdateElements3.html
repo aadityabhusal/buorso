@@ -1,0 +1,28 @@
+<!-- USER PAGE -->
+					<li><div class="s1"><i class="fa fa-external-link" aria-hidden="true"></i>Social</div>
+						<div class="s2">
+							<?php if(strlen($usersite)<=0 && strlen($userfacebook)<=0 && strlen($usertwitter)<=0 && strlen($usergoogle)<=0 && $user_id==$userid){echo '<a href="../settings/" style="font-size:13px;">Enter Social Information</a>';}else{ 
+							if (strlen($usersite)<=0){}else{echo'<span><a href="'.$usersite.'" title="Website"><i class="fa fa-globe" aria-hidden="true"></i></a></span>';}
+							if (strlen($userfacebook)<=0){}else{echo'<span><a href="'.$userfacebook.'" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></span>';}
+							if (strlen($usertwitter)<=0){}else{echo'<span><a href="'.$usertwitter.'" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>';}
+							if (strlen($usergoogle)<=0){}else{echo'<span><a href="'.$usergoogle.'" title="Google Plus"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></span>';}}?>
+						</div>
+					</li>			
+					
+<!-- SETTINGS PAGE -->					
+					<div class="edit-social">
+						<label>Edit your Social Information</label>
+						<div class="link-wrap lw1"><i class="fa fa-globe" aria-hidden="true"></i><input type="text" name="site" class="" value="<?php echo $site; ?>" placeholder="Enter your Website Link"/></div>
+						<div class="link-wrap lw2"><i class="fa fa-facebook-official" aria-hidden="true"></i><input type="text" name="facebook" class="" value="<?php echo $facebook; ?>" placeholder="Enter your Facebook Link"/></div>
+						<div class="link-wrap lw3"><i class="fa fa-twitter" aria-hidden="true"></i><input type="text" name="twitter" class="" value="<?php echo $twitter; ?>" placeholder="Enter your Twitter Name"/></div>
+						<div class="link-wrap"><i class="fa fa-google-plus-official" aria-hidden="true"></i><input type="text" name="google" class="" value="<?php echo $google; ?>" placeholder="Enter your Google Plus Link"/></div>
+					</div>
+					
+/*The Social Link Part*/
+.link-wrap{border:1px solid #e4e6e8; border-radius:3px;width:310px; padding:0 10px; float:left;}
+.lw1{margin-right:20px; margin-bottom:20px;}
+.lw2{margin-bottom:20px;}
+.lw3{margin-right:20px;}
+.link-wrap>i{font-size:18px; padding-right:7px; border-right:1px solid #95a5a6;}
+.link-wrap>input{font-size:15px; border:0; padding:8px 2px; margin:0; width:274px; outline:0;}					
+					

@@ -1,0 +1,32 @@
+<!-- Product Page -> Comments -> Comment Header -> Below Comments Title -->
+<div class="sortby dib-vat">
+	<div class="sortbytitle dib-vat"><b>Sort by:</b><?php if(isset($_GET['commentsortby']) || !empty($_GET['commentsortby'])){ if($_GET['commentsortby']=="Top"){echo"Top";}else if($_GET['commentsortby']=="Newest"){echo"Newest";}}else{echo "Top";}?></div>
+	<i class="fa fa-chevron-down" aria-hidden="true"></i>
+	<ul class="sortbynav">
+		<li><a href="../product/?productid=<?php echo $_GET['productid'];?>&commentsortby=Top">Top</a></li>
+		<li><a href="../product/?productid=<?php echo $_GET['productid'];?>&commentsortby=Newest">Newest</a></li>
+	</ul>
+</div>
+<!-- ELEMENT CSS
+.comments-header .sortby{margin:0; margin-left:320px; width:130px;}
+.comments-header .sortbynav{width:140px;}
+.comments-header .sortbynav a{width:130px!important;}
+.comments-header .sortbytitle{width:110px;}
+max-width 557px : .comments-header .sortby{margin-left:35vw;}
+ -->
+
+
+ 
+
+<!-- Do not Submit if text area is Empty
+function btnfrmsubmit(formname,textname){
+	if($.trim(document.getElementById(textname).value)==''){}else{
+	var formnameid = document.getElementById(formname);
+	formnameid.submit();
+	 }
+}
+ -->
+
+
+
+<!--  -->

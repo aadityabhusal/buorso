@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="58.000000pt" height="68.000000pt" viewBox="0 0 58.000000 68.000000"
+ preserveAspectRatio="xMidYMid meet">
+<title>Buorso Logo</title>
+<metadata>
+Created by potrace 1.14, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,68.000000) scale(0.100000,-0.100000)"
+fill="#3498db" stroke="none">
+<path d="M29 661 l-24 -19 0 -302 0 -302 24 -19 c21 -17 41 -19 182 -19 187 0
+242 10 294 52 47 39 65 82 65 151 0 65 -27 112 -83 142 -20 11 -37 22 -37 25
+0 3 14 13 30 22 54 31 77 126 45 187 -20 39 -69 78 -113 91 -20 5 -110 10
+-198 10 -144 0 -164 -2 -185 -19z m322 -101 c47 -13 68 -54 47 -96 -20 -43
+-52 -54 -160 -54 l-98 0 0 80 0 80 88 0 c48 0 103 -5 123 -10z m46 -276 c21
+-16 29 -31 31 -62 6 -87 -36 -112 -188 -112 l-100 0 0 101 0 101 114 -4 c98
+-2 119 -6 143 -24z"/>
+</g>
+</svg>

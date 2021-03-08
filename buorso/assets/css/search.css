@@ -1,0 +1,75 @@
+#search-ads{
+	max-width: 650px;
+}
+
+#search-head{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--border-color);
+	padding: 5px 0;
+	margin-bottom: 20px;
+}
+
+#search-head-title{
+	font-size: 20px;
+	align-self: flex-end;
+}
+
+#search-sortby{
+	font-size: 14px;
+	width: 210px;
+}
+
+#sortby-title{
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	padding: 5px;
+	padding-right: 30px;
+	position: relative;
+}
+
+#sortby-title>span{
+	position: absolute;
+	right: 8px;
+	top: 4px;
+	transform: rotateZ(90deg);
+}
+
+#search-sortby a{
+	display: block;
+	padding: 8px 4px;
+	width: 190px;
+}
+
+.product{
+	position: relative;
+	flex: 0 0 100%;
+	border-bottom: 1px solid var(--border-color);
+	margin: 10px 5px;
+}
+
+.product a{
+	flex-direction: row;
+}
+
+.product-image{
+	flex: 0 0 200px;
+	margin-right: 10px;
+}
+
+.product-image img{
+	margin-top: 0;
+}
+
+.product-title{
+	font-size: 18px;
+	max-height: 42px;
+}
+
+.product-price{
+	font-size: 16px;
+}
+
+.product>.product-edit{
+	bottom: 10px;
+}

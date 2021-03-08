@@ -1,0 +1,13 @@
+Redirect not happening using cookies.
+Notifications page not working (Cannot take reciever_id)
+New message scroll down not happening in messages
+Sounds for Notifications and messages
+Total views in Profile page
+Terms and conditions
+The whole settings page (All 3)
+Upadating website according to privacy settings
+Extra pages (Hepl,safety,about,contact/feedback)
+Change (Featured,Trending) to (Today,this week etc)
+4 images upload
+Edit page not opening
+Email and Phone Verification

@@ -1,0 +1,191 @@
+#product-section{
+	display: flex;
+}
+
+#image-section{
+     flex: 0 0 400px;
+}
+
+#product-image{
+	position: relative;
+    height: 300px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+}
+
+#product-image>img{
+	margin-top: 0;
+}
+
+#product-image-list{
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+#product-image-thumb{
+	position: relative;
+	width: 95px;
+	cursor: pointer;
+}
+
+#warning{
+	background-color: var(--border-color);
+	border-radius: 5px;
+	width: 250px;
+	padding: 15px 25px;
+	margin: 0 auto;
+}
+
+ol{
+	margin: 0;
+	padding: 10px 0 0 15px;
+}
+
+#product-info{
+	 width: 100%;
+	 position: relative;
+	 padding: 0 40px 0 20px;
+}
+
+#product-info>div{
+	margin-bottom: 10px;
+}
+
+#product-info>.product-edit{
+	position: absolute;
+	top: -3px;
+	right: 2px;
+}
+
+#product-info .dropdown-button>div{
+	width: 6px;
+	height: 6px;
+	margin: 3px auto;
+}
+
+.dropdown-box a{
+	display: flex;
+	flex-direction: column;
+}
+
+#product-info>div:not(:last-child){
+	display: flex;
+	align-items: center;
+}
+
+#product-info span{
+	color: #7f8c8d;
+	margin-right: 10px;
+	display: block;
+}
+
+#price{
+	margin: 15px 0;
+}
+
+#description{
+	margin-top: 30px;
+}
+
+#description .label{
+	margin-bottom: 10px;
+}
+
+#comment-section{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.promo-square{
+	flex: 0 0 300px;
+	/*width: 300px;*/
+	height: 250px;
+	background-color: #bdc3c7;
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+#comments{
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	margin-left: 20px;
+	width: 650px;
+	align-self: flex-start; /*For preventing stretching to the height of the parent div*/
+}
+
+#comments-header{
+	padding: 10px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+#comments-header h3{
+	margin: 0;
+	font-weight: normal;
+}
+
+.comment{
+	display: flex;
+	border-bottom: 1px solid var(--border-color);
+	padding: 10px 5px;
+}
+
+.comment-img{
+	position: relative;
+	border-radius: 100%;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.comment-date{
+	font-size: 12px;
+    color: #7f8c8d;
+    margin: 3px 0 5px 0;
+}
+
+#comment-area{
+	display: flex;
+	border-top: 1px solid var(--border-color);
+}
+
+#comment-user{
+	flex: 0 0 40px;
+	padding: 5px;
+	border-right: 1px solid var(--border-color);
+}
+
+#comment-user-image{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+#comment-box{
+	flex: 1;
+	padding: 10px;
+	border-right: 1px solid var(--border-color);
+}
+
+#comment-box>textarea{
+	width: 100%;
+	margin-right: 10px;
+	border: none;
+}
+
+#comment-form>input{
+	margin: 5px;
+	padding: 10px 0;
+	align-self: flex-start; /*For preventing stretching to the height of the parent div*/
+}
+
+#comment-form{
+	display: flex;
+	justify-content: space-around;
+}

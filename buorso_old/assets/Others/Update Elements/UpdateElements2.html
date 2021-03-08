@@ -1,0 +1,41 @@
+					<div class="prod-bio">
+						<div class="prod-textarea">
+							<input type="button" class="editbtn" title="Undo" onClick="func('undo')" value="&#xf0e2;">
+							<input type="button" class="editbtn" title="Redo" onClick="func('redo')" value="&#xf01e;">
+							<input type="button" class="editbtn" title="Bold" onClick="func('bold')" value="&#xf032;">
+							<input type="button" class="editbtn" title="Italic" onClick="func('italic')" value="&#xf033;">
+							<input type="button" class="editbtn" title="Link" onClick="link()" value="&#xf0c1;">
+							<input type="button" class="editbtn" title="Unlink" onClick="func('Unlink')" value="&#xf127;">
+							<textarea style="display:none;" name="hiddenTextArea" id="hiddenTextArea" cols="100" rows="14" maxlength="2048"></textarea>
+							<div id="descriptionbox" class="sml-scrl" title="Enter the Product Description" placeholder="Enter the Product Description" contenteditable="true" ondragenter="return false;" ondragleave="return false;" ondragover="return false;" ondrop="return false;"></div>
+						</div>
+					</div>
+					
+					
+					
+					JS
+					
+function func(command){document.execCommand(command,false,null);}
+function link(){var linkURL = prompt('Enter the URL for this link:', 'http://'); document.execCommand('CreateLink', false, linkURL);}
+function submit_form(){
+	var editform = document.getElementById('editform');
+	editform.elements['hiddenTextArea'].value = document.getElementById('descriptionbox').innerHTML;
+	editform.submit();}
+	
+	
+	var limit = 2048;
+$('div[contenteditable]').keypress(function() {
+  return this.innerHTML.length < limit;
+}).on({
+  'paste': function(e) {
+    var len = this.innerHTML.length,
+      cp = e.originalEvent.clipboardData.getData('text');
+    if (len < limit)
+      this.innerHTML += cp.substring(0, limit - len);
+    return false;
+  },
+  'drop': function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+});

@@ -1,0 +1,60 @@
+.container{
+	display: flex;
+}
+
+#account-form-wrapper{
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 1px solid var(--border-color);
+	color: #7f8c8d;
+	box-shadow: 0 2px 5px 0 var(--shadow-color);
+}
+
+#account-form-container{
+	width: 360px;
+	padding: 40px;
+	text-align: center;
+}
+
+#account-form{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid var(--border-color);
+	padding-bottom: 20px;
+	margin: 20px 0;
+	text-align: left;
+}
+
+#account-form input{
+	padding: 15px 10px;
+	transition: 0.2s;
+}
+
+#account-form>input{
+	margin-top: 20px;
+	width: 100%;
+}
+
+/*#account-form input:hover{
+	border-color: var(--site-color);
+}*/
+
+input[type=submit]{
+	color: #ffffff;
+	border: none;
+	background-color: var(--site-color);
+}
+
+#account-form-wrapper input[type=submit]:hover{
+	box-shadow: 0 5px 10px 0 var(--shadow-color);
+}
+
+.form-extra{
+	margin-top: 20px;
+}
+
+.agreenotice{
+	font-size: 12px;
+	margin-top: 20px;
+	text-align: center;
+}
